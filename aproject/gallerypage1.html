@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoshPicks - Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F7EFE5;
+            margin: 0;
+        }
+
+        header {
+            background-color: #C8A1E0;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #C8A1E0;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 600px) {
+            header h2 {
+                font-size: 20px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .gallery-item img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Our Gallery</h2>
+</header>
+
+<section>
+    <h2 style="text-align: center; color: #C8A1E0;">Explore Our Beauty Collection</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="image1.jpg" alt="Makeup Product 1">
+        </div>
+        <div class="gallery-item">
+            <img src="image2.jpg" alt="Makeup Product 2">
+        </div>
+        <div class="gallery-item">
+            <img src="image3.jpg" alt="Makeup Product 3">
+        </div>
+        <div class="gallery-item">
+            <img src="image4.jpg" alt="Makeup Product 4">
+        </div>
+        <div class="gallery-item">
+            <img src="image5.jpg" alt="Makeup Product 5">
+        </div>
+        <div class="gallery-item">
+            <img src="image6.jpg" alt="Makeup Product 6">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 PoshPicks | All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Care Products</title>
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/474x/41/35/e7/4135e70765c927064358e61eb9eb928a.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F7EFE5;
+        }
+        header {
+            background-color: #C8A1E0;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: #EBD3F8;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            /* height: auto; */
+            border-radius: 8px;
+        }
+        .product-card h2 {
+            font-size: 1.25em;
+            margin: 10px 0;
+            color: #333;
+        }
+        .product-card p {
+            color: #666;
+        }
+        .product-card .price {
+            font-size: 1.15em;
+            color: #9120d8;
+            margin: 10px 0;
+        }
+        .product-card button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .product-card button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #C8A1E0;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Exclusive Skin Care Collection</h2>
+    </header>
+
+    <section class="products-grid">
+        <div class="product-card">
+            <img src="moisturizer.jpg" alt="Moisturizer" width="400" height="200">
+            <h2>Moisturizer</h2>
+            <p>Improves your Skin Hydraton.</p>
+            <b><p class="price" color="black">120/-</p></b>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="toner.jpg" alt="Toner" height="200">
+            <h2>Toner</h2>
+            <p>Gives Your face enough hydration.</p>
+            <b><p class="price">250/-</p></b>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="sunscreen.jpg" alt="sunscreen" height="200">
+            <h2>Sunscreen</h2>
+            <p>Protects from Harmful UV Rays.</p>
+            <b><p class="price">250/-</p></b>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="lipbalm.jpg" alt="lipbalm" height="200">
+            <h2>Lip Balm</h2>
+            <p>Reduce Pigmentation & Darkness.</p>
+            <b><p class="price">200/-</p></b>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- <div class="product-card">
+            <img src="blush.jpg" alt="Blush" height="200">
+            <h2>Soft Blush</h2>
+            <p>Add a natural flush of color to your cheeks.</p>
+            <b><p class="price">100/-</p></b>
+            <button>Add to Cart</button>
+        </div> -->
+
+        <div class="product-card">
+            <img src="facemask.jpg" alt="Face Mask" height="200">
+            <h2>Face Mask</h2>
+            <p>Gives glow to your face.</p>
+            <b><p class="price" color="black">60/-</p></b>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- <div class="product-card">
+            <img src="eyebrowfill.jpg" alt="Eyebrow Gel" width="400" height="200">
+            <h2>EyeBrow gel</h2>
+            <p>Smudge proof and long-lasting .</p>
+            <b><p class="price" color="black">90/-</p></b>
+            <button>Add to Cart</button>
+        </div> -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PoshPicks | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

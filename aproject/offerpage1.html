@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F7EFE5;
+            margin: 0;
+        }
+
+        header {
+            background-color: #C8A1E0;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .offers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .offer-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .offer-card img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        .offer-card h3 {
+            color: #C8A1E0;
+            padding: 10px 0;
+        }
+
+        .offer-card p {
+            padding: 0 15px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .offer-card .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .offer-card .btn:hover {
+            background-color: #218838;
+        }
+
+        .offer-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #C8A1E0;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 600px) {
+            header h2 {
+                font-size: 20px;
+            }
+
+            .offers-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .offers-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Special Offers</h2>
+</header>
+
+<section>
+    <h2 style="color: #C8A1E0;">Don't Miss Out On These Deals!</h2>
+    <div class="offers-grid">
+        <div class="offer-card">
+            <img src="dis1.jpg" alt="Offer 1">
+            <h3>50% Off All Lipsticks</h3>
+            <p>Get your favorite shades at half price! Limited time offer.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="offer-card">
+            <img src="dis2.jpg" alt="Offer 2">
+            <h3>Buy 1 Get 1 Free - Eyeshadow Palettes</h3>
+            <p>For a limited time, buy any eyeshadow palette and get one free!</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="offer-card">
+            <img src="dis3.jpg" alt="Offer 3">
+            <h3>20% Off Skincare Essentials</h3>
+            <p>Save on our best-selling skincare items to keep your skin glowing.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="offer-card">
+            <img src="dis4.jpg" alt="Offer 4">
+            <h3>Free Makeup Bag with $50 Purchase</h3>
+            <p>Spend $50 or more and receive a free stylish makeup bag.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 PoshPicks | All rights reserved.</p>
+</footer>
+
+</body>
+</html>

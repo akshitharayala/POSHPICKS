@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoshPicks - Menu</title>
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/474x/41/35/e7/4135e70765c927064358e61eb9eb928a.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F7EFE5;
+        }
+
+        header {
+            background-color: #C8A1E0;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Hamburger Menu Icon */
+        .menu-btn {
+            background-color: #C8A1E0;
+            border: none;
+            color: white;
+            padding: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        /* Responsive Menu */
+        nav {
+            display: none;
+            background-color: #EBD3F8;
+            padding: 20px;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            padding: 10px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #C8A1E0;
+        }
+
+        /* Active Menu */
+        nav.active {
+            display: block;
+        }
+
+        /* Page Content */
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #C8A1E0;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 900px) {
+            header h2 {
+                font-size: 22px;
+            }
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Welcome to PoshPicks...!!</h2>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<!-- Hidden Navigation Menu -->
+<nav id="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<section>
+    <h2>Explore Our Collection</h2>
+    <p>Here at PoshPicks, we offer a wide range of beauty products designed to enhance your style. Click on the menu to navigate through our pages and explore our exclusive products, latest offers, and more.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 PoshPicks | All rights reserved.</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
